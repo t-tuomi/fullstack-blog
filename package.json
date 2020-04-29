@@ -1,0 +1,11 @@
+{
+  "name": "fullstack-blog",
+  "version": "1.0.0",
+  "description": "Fullstack course 2020, assignment 4->, blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Timo Tuomi",
+  "license": "ISC"
+}
