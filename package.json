@@ -4,11 +4,19 @@
   "description": "Fullstack course 2020, assignment 4->, blog",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
   },
   "author": "Timo Tuomi",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "mongoose": "^5.9.10"
   }
 }
