@@ -40,7 +40,7 @@ const mostLikes = (blogs) => {
                         .reduce((a, c) => a + c.likes, 0)      
         }
     })
-    .sort((a, b) => b.likes - a.likes)[0]
+    .sort((a, b) => b.likes - a.likes)[0]   // tai joku max()
 
 }
 
