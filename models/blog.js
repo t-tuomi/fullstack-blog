@@ -3,6 +3,8 @@ const mongoose = require('mongoose')
 const config = require('../utils/config')
 const logger = require('../utils/logger')
 
+mongoose.set('useFindAndModify', false);
+
 const blogSchema = mongoose.Schema({
   title: String,
   author: String,
