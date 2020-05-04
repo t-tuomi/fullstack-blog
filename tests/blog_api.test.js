@@ -41,6 +41,30 @@ test('property _id is named id', async () => {
     expect(response.body[0].id).toBeDefined()
 })
 
+test('a valid blog can be added ', async () => {
+
+const newBlog = {
+    title: 'testing backend',
+    author: 'TT',
+    url: 'http://localhost/myblog',
+    likes: 205
+  }
+
+  await api
+    .post('/api/blogs')
+    .send(newBlog)
+    .expect(201)  // materiaalissa 200?
+    .expect('Content-Type', /application\/json/)
+
+  const response = await api.get('/api/blogs')
+
+  const titles = response.body.map(r => r.title)
+
+  expect(response.body).toHaveLength(helper.initialBlogs.length + 1)
+  expect(titles).toContain(
+    'testing backend'
+  )
+})
 
 afterAll(() => {
     mongoose.connection.close()
