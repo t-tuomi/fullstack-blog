@@ -1,6 +1,11 @@
-PUT  http://localhost:3003/api/blogs/5ea945bea5bb4e00dc16d50e
+
+
+
+POST  http://localhost:3003/api/login
 Content-Type: application/json
 
 {
-    "likes": 777
+    "username": "tt3",
+    "password": "tt33"
 }
+
