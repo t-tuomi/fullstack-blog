@@ -1,11 +1,12 @@
 
 
 
-POST  http://localhost:3003/api/login
+POST  http://localhost:3003/api/blogs
 Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InR0MyIsImlkIjoiNWViNDFiMDc4MzU3Y2YzMmI4MDdiMzBlIiwiaWF0IjoxNTg4OTQ5Njk5fQ.Pfu30mIC9OCJsDONYc461M8XqHnNlgnFwEEfTwZ3774
 
 {
-    "username": "tt3",
-    "password": "tt33"
+    "title": "token test 4",
+    "url": "http://foo.bar"
 }
 
